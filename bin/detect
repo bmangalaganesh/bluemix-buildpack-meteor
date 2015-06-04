@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -d $1/".meteor" ]; then
-  echo "Meteor"
+  echo "Meteor from Bancha's custom buildpack....."
   exit 0
 else
   BUILD_DIR=$(find $1 -type d -name ".meteor" 2>/dev/null -print -quit)
