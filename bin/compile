@@ -27,6 +27,10 @@ TEMP_DIR=$(mktemp -d $BUILDPACK_DIR"/temp-XXXX")
 # Create directories.
 mkdir -p $COMPILE_BIN_DIR $COMPILE_APP_DIR
 
+#Echo the Directories thta are used here
+echo "COMPILE_DIR:"
+echo $COMPILE_DIR
+
 # Load some convenience functions like status(), echo(), and indent().
 source $BUILDPACK_DIR"/bin/common.sh"
 
